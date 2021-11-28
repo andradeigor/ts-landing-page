@@ -20,7 +20,10 @@ export const LoginPageFormWarper = styled.div`
   width: 55%;
   height: 100vh;
   background-color: ${(props) => props.theme.colors.background};
-  padding: 5%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  padding-left: 6%;
+  padding-right: 6%;
 `;
 
 export const LoginPageFormContainer = styled.form`
@@ -33,15 +36,16 @@ export const LoginPageFormContainer = styled.form`
 export const LoginPageFormTitle = styled.h1`
   font-size: 48px;
   font-weight: 600;
-  margin-bottom: 8%;
+  margin-bottom: 30px;
 `;
 export const LoginPageFormItemWarper = styled.div`
   width: 100%;
-  height: 150px;
+  height: 140px;
 `;
 
 export const LoginPageFormItemTitle = styled.p`
   font-size: 20px;
+  font-weight: 500;
   color: ${(props) => props.theme.colors.secondary};
   margin-bottom: 5px;
 `;
