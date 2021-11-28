@@ -115,4 +115,18 @@ export const LoginPageOAuthButton = styled.button`
   height: 100%;
   border: ${(props) => props.theme.colors.subButton} 1px solid;
   outline: none;
+  display: flex;
+  align-items: center;
+`;
+
+export const LoginPageOAuthIcon = styled.img`
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+`;
+export const LoginPageOAuthText = styled.p`
+  font-size: 16px;
+  font-weight: 500;
+  color: ${(props) => props.theme.colors.primary};
 `;

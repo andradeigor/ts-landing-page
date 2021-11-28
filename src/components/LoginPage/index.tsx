@@ -16,8 +16,12 @@ import {
   LoginPageOAuthSubText,
   LoginPageOAuthArea,
   LoginPageOAuthButton,
+  LoginPageOAuthIcon,
+  LoginPageOAuthText,
 } from "./style";
 import ImagePath from "../../assets/background.jpeg";
+import GoogleIconPath from "../../assets/GoogleLogo.svg";
+import GitHubIconPath from "../../assets/GitHubLogo.svg";
 /*
  */
 const LoginPage: React.FC = () => {
@@ -50,8 +54,14 @@ const LoginPage: React.FC = () => {
           </LoginPageButtonArea>
           <LoginPageOAuthSubText>OR</LoginPageOAuthSubText>
           <LoginPageOAuthArea>
-            <LoginPageOAuthButton></LoginPageOAuthButton>
-            <LoginPageOAuthButton></LoginPageOAuthButton>
+            <LoginPageOAuthButton>
+              <LoginPageOAuthIcon src={GoogleIconPath} />
+              <LoginPageOAuthText>Sign up with Google</LoginPageOAuthText>
+            </LoginPageOAuthButton>
+            <LoginPageOAuthButton>
+              <LoginPageOAuthIcon src={GitHubIconPath} />
+              <LoginPageOAuthText>Sign up with Github</LoginPageOAuthText>
+            </LoginPageOAuthButton>
           </LoginPageOAuthArea>
         </LoginPageFormContainer>
       </LoginPageFormWarper>
