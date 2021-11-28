@@ -22,8 +22,7 @@ import {
 import ImagePath from "../../assets/background.jpeg";
 import GoogleIconPath from "../../assets/GoogleLogo.svg";
 import GitHubIconPath from "../../assets/GitHubLogo.svg";
-/*
- */
+
 const LoginPage: React.FC = () => {
   return (
     <LoginPageWarper>
@@ -48,8 +47,8 @@ const LoginPage: React.FC = () => {
           <LoginPageButtonArea>
             <LoginPageButton>Create Account</LoginPageButton>
             <LoginPageButtonSubTex>
-              Already have an account?{" "}
-              <LoginPageButtonSubTexLink>Log in</LoginPageButtonSubTexLink>
+              Already have an account?
+              <LoginPageButtonSubTexLink> Log in</LoginPageButtonSubTexLink>
             </LoginPageButtonSubTex>
           </LoginPageButtonArea>
           <LoginPageOAuthSubText>OR</LoginPageOAuthSubText>
