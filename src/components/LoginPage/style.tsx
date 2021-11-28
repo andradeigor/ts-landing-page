@@ -19,6 +19,9 @@ export const LoginPageImage = styled.img`
 export const LoginPageFormWarper = styled.div`
   width: 55%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: ${(props) => props.theme.colors.background};
   padding-top: 8%;
   padding-bottom: 8%;
@@ -27,7 +30,7 @@ export const LoginPageFormWarper = styled.div`
 `;
 
 export const LoginPageFormContainer = styled.form`
-  width: 100%;
+  width: 600px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -61,4 +64,55 @@ export const LoginPageFormItem = styled.input`
   padding-bottom: 3%;
   padding-left: 5%;
   font-size: 20px;
+`;
+
+export const LoginPageButtonArea = styled.div`
+  margin-top: 10px;
+  width: 300px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+`;
+export const LoginPageButton = styled.button`
+  width: 100%;
+  height: 60px;
+  background-color: ${(props) => props.theme.colors.button};
+  border: none;
+  outline: none;
+  font-size: 26px;
+  font-weight: 500;
+  color: ${(props) => props.theme.colors.background};
+`;
+
+export const LoginPageButtonSubTex = styled.p`
+  margin-top: 15px;
+  font-weight: 300;
+  font-size: 18px;
+`;
+export const LoginPageButtonSubTexLink = styled.a`
+  margin-top: 15px;
+  font-weight: 500;
+  color: ${(props) => props.theme.colors.button};
+  font-size: 18px;
+`;
+
+export const LoginPageOAuthSubText = styled.p`
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 600;
+`;
+export const LoginPageOAuthArea = styled.div`
+  width: 100%;
+  height: 60px;
+  display: flex;
+  gap: 20px;
+`;
+
+export const LoginPageOAuthButton = styled.button`
+  background-color: ${(props) => props.theme.colors.background};
+  width: 290px;
+  height: 100%;
+  border: ${(props) => props.theme.colors.subButton} 1px solid;
+  outline: none;
 `;

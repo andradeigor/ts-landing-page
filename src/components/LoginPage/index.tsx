@@ -9,6 +9,13 @@ import {
   LoginPageFormItemWarper,
   LoginPageFormItemTitle,
   LoginPageFormItem,
+  LoginPageButtonArea,
+  LoginPageButton,
+  LoginPageButtonSubTex,
+  LoginPageButtonSubTexLink,
+  LoginPageOAuthSubText,
+  LoginPageOAuthArea,
+  LoginPageOAuthButton,
 } from "./style";
 import ImagePath from "../../assets/background.jpeg";
 /*
@@ -17,7 +24,7 @@ const LoginPage: React.FC = () => {
   return (
     <LoginPageWarper>
       <LoginPageImageWarper>
-        <LoginPageImage src={ImagePath} />
+        <LoginPageImage alt="background image" src={ImagePath} />
       </LoginPageImageWarper>
       <LoginPageFormWarper>
         <LoginPageFormContainer>
@@ -34,6 +41,18 @@ const LoginPage: React.FC = () => {
             <LoginPageFormItemTitle>Password</LoginPageFormItemTitle>
             <LoginPageFormItem placeholder="Enter your Password"></LoginPageFormItem>
           </LoginPageFormItemWarper>
+          <LoginPageButtonArea>
+            <LoginPageButton>Create Account</LoginPageButton>
+            <LoginPageButtonSubTex>
+              Already have an account?{" "}
+              <LoginPageButtonSubTexLink>Log in</LoginPageButtonSubTexLink>
+            </LoginPageButtonSubTex>
+          </LoginPageButtonArea>
+          <LoginPageOAuthSubText>OR</LoginPageOAuthSubText>
+          <LoginPageOAuthArea>
+            <LoginPageOAuthButton></LoginPageOAuthButton>
+            <LoginPageOAuthButton></LoginPageOAuthButton>
+          </LoginPageOAuthArea>
         </LoginPageFormContainer>
       </LoginPageFormWarper>
     </LoginPageWarper>
