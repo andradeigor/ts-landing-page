@@ -23,8 +23,8 @@ export const LoginPageFormWarper = styled.div`
   justify-content: center;
   align-items: center;
   background-color: ${(props) => props.theme.colors.background};
-  padding-top: 8%;
-  padding-bottom: 8%;
+  padding-top: 6%;
+  padding-bottom: 6%;
   padding-left: 6%;
   padding-right: 6%;
 `;
@@ -53,12 +53,14 @@ export const LoginPageFormItemTitle = styled.p`
   margin-bottom: 5px;
 `;
 
-export const LoginPageFormItem = styled.input`
+export const LoginPageFormItem = styled("input")<{
+  error: boolean;
+}>`
   width: 100%;
   height: 65px;
   background-color: ${(props) => props.theme.colors.backgroundInput};
   outline: none;
-  border: none;
+  border: ${(props) => (props.error ? "1px red solid" : "none")};
   color: ${(props) => props.theme.colors.secondary};
   padding-top: 3%;
   padding-bottom: 3%;
