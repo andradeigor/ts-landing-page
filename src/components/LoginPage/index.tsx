@@ -55,7 +55,13 @@ const LoginPage: React.FC = () => {
             <LoginPageFormItem
               error={errors.email}
               placeholder="Enter your Email here"
-              {...register("email", { required: true })}
+              {...register("email", {
+                required: "required",
+                pattern: {
+                  value: /\S+@\S+\.\S+/,
+                  message: "Entered value does not match email format",
+                },
+              })}
             ></LoginPageFormItem>
             {errors.email && <span> Email is required</span>}
           </LoginPageFormItemWarper>
@@ -65,7 +71,13 @@ const LoginPage: React.FC = () => {
               error={errors.password}
               type="password"
               placeholder="Enter your Password"
-              {...register("password", { required: true })}
+              {...register("password", {
+                required: "required",
+                minLength: {
+                  value: 6,
+                  message: "min lenght is 5",
+                },
+              })}
             ></LoginPageFormItem>
             {errors.password && <span> Password is required</span>}
           </LoginPageFormItemWarper>
