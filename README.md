@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+# BasicCrudTS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto desenvolvido por [Igor Andrade](https://github.com/andradeigor). Consiste em uma página de login implementada com base [Neste Design](https://www.figma.com/community/file/1035541564462748738), feita em React.
 
-## Available Scripts
+- [Como usar](#como-usar)
+- [Demonstração](#demonstração)
+- [Tecnologias](#tecnologias)
+- [Contribuidores](#contribuidores)
+- [Licença](#licença)
 
-In the project directory, you can run:
+## 🤖 Como Usar:
 
-### `yarn start`
+Rodando o Servidor localmente
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+ # Clone esse repositório
+ $ git clone https://github.com/andradeigor/ts-landing-page
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ # Acesse a pasta do projeto
+ $ cd ts-landing-page
 
-### `yarn test`
+ # Instale dependências
+ $ yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ # Starte o Projeto
+ $ yarn start
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📜 Demonstração:
 
-### `yarn eject`
+![demonstration](https://media1.giphy.com/media/6vwUeAP0tN2sI3nQZY/giphy.gif?cid=790b76118a124e0d1427f4c892d9af8e7b7c997496567ce0&rid=giphy.gif&ct=g)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 💻 Tecnologias
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React
+- Typescript
+- React-Hook-Form
+- Styled Components
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 👥 Contribuidores
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Esses são os contribuidores do projeto (<a href="https://allcontributors.org/docs/en/emoji-key">emoji key</a>).
 
-## Learn More
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/andradeigor"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/21049910?v=4" width="100px;" alt=""/><br /><sub><b>Igor Andrade</b></sub></a><br /><a href="https://github.com/andradeigor/DiscordBotUFRJ/commits?author=andradeigor" title="Igor Andrade">🤔 💻 🚧</a></td>
+  </tr>
+</table>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📖 Licença
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Este projeto está licenciado sob a licença <a href="https://choosealicense.com/licenses/mit/">MIT</a>.
