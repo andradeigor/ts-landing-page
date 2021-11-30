@@ -4,6 +4,7 @@ Projeto desenvolvido por [Igor Andrade](https://github.com/andradeigor). Consist
 
 - [Como usar](#como-usar)
 - [Demonstração](#demonstração)
+- [Responsividade](#responsive)
 - [Tecnologias](#tecnologias)
 - [Contribuidores](#contribuidores)
 - [Licença](#licença)
@@ -30,6 +31,10 @@ Rodando o Servidor localmente
 ## 📜 Demonstração:
 
 ![demonstration](https://media1.giphy.com/media/6vwUeAP0tN2sI3nQZY/giphy.gif?cid=790b76118a124e0d1427f4c892d9af8e7b7c997496567ce0&rid=giphy.gif&ct=g)
+
+## 📜 Reponsividade:
+
+![responsive](https://media0.giphy.com/media/S5wV4tHJlQq2YMAen8/giphy.gif?cid=790b7611de91134d28c6feb0c04c2ef9bcc38537df01c458&rid=giphy.gif&ct=g)
 
 ## 💻 Tecnologias
 
