@@ -10,4 +10,7 @@ export const light: DefaultTheme = {
     backgroundInput: "#EFF0F2",
     background: "#FAFAFA",
   },
+  breakpoints: {
+    lg: "1200px",
+  },
 };

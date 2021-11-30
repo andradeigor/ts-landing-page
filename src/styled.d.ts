@@ -15,5 +15,8 @@ declare module "styled-components" {
       backgroundInput: string;
       background: string;
     };
+    breakpoints: {
+      lg: string;
+    };
   }
 }

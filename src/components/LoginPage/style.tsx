@@ -8,6 +8,9 @@ export const LoginPageWarper = styled.div`
 `;
 export const LoginPageImageWarper = styled.div`
   width: 45%;
+  @media (max-width: ${(props) => props.theme.breakpoints.lg}) {
+    width: 0;
+  }
 `;
 
 export const LoginPageImage = styled.img`
@@ -27,6 +30,9 @@ export const LoginPageFormWarper = styled.div`
   padding-bottom: 6%;
   padding-left: 6%;
   padding-right: 6%;
+  @media (max-width: ${(props) => props.theme.breakpoints.lg}) {
+    width: 100%;
+  }
 `;
 
 export const LoginPageFormContainer = styled.form`
