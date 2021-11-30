@@ -41,6 +41,9 @@ export const LoginPageFormContainer = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+    width: 100%;
+  }
 `;
 export const LoginPageFormTitle = styled.h1`
   font-size: 48px;

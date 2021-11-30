@@ -11,6 +11,7 @@ export const light: DefaultTheme = {
     background: "#FAFAFA",
   },
   breakpoints: {
+    sm: "650px",
     lg: "1200px",
   },
 };
