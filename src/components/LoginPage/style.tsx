@@ -132,7 +132,7 @@ export const LoginPageOAuthButton = styled.button`
   :active {
     position: relative;
     top: -0.5px;
-  }
+  } //
 `;
 
 export const LoginPageOAuthIcon = styled.img`
