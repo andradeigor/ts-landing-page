@@ -49,6 +49,9 @@ export const LoginPageFormTitle = styled.h1`
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 30px;
+  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+    font-size: 32px;
+  }
 `;
 export const LoginPageFormItemWarper = styled.div`
   width: 100%;
@@ -60,6 +63,9 @@ export const LoginPageFormItemTitle = styled.p`
   font-weight: 500;
   color: ${(props) => props.theme.colors.secondary};
   margin-bottom: 5px;
+  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+    font-size: 16px;
+  }
 `;
 
 export const LoginPageFormItem = styled("input")<{
@@ -78,6 +84,10 @@ export const LoginPageFormItem = styled("input")<{
   :focus {
     border: 1px solid ${(props) => props.theme.colors.secondary};
   }
+  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+    font-size: 16px;
+    height: 45px;
+  }
 `;
 
 export const LoginPageButtonArea = styled.div`
@@ -86,6 +96,11 @@ export const LoginPageButtonArea = styled.div`
   height: 110px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+    width: 250px;
+  }
 `;
 export const LoginPageButton = styled.button`
   width: 100%;
@@ -101,12 +116,20 @@ export const LoginPageButton = styled.button`
     position: relative;
     top: -0.5px;
   }
+  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+  }
 `;
 
 export const LoginPageButtonSubTex = styled.p`
   margin-top: 15px;
   font-weight: 300;
   font-size: 18px;
+  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+    font-size: 14px;
+  }
 `;
 export const LoginPageButtonSubTexLink = styled.a`
   margin-top: 15px;
@@ -114,6 +137,9 @@ export const LoginPageButtonSubTexLink = styled.a`
   color: ${(props) => props.theme.colors.button};
   font-size: 18px;
   cursor: pointer;
+  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+    font-size: 14px;
+  }
 `;
 
 export const LoginPageOAuthSubText = styled.p`
@@ -121,12 +147,19 @@ export const LoginPageOAuthSubText = styled.p`
   margin-bottom: 30px;
   font-size: 26px;
   font-weight: 600;
+  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+    font-size: 18px;
+  }
 `;
 export const LoginPageOAuthArea = styled.div`
   width: 100%;
   height: 60px;
   display: flex;
   gap: 20px;
+  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+    gap: 10px;
+    height: 40px;
+  }
 `;
 
 export const LoginPageOAuthButton = styled.button`
@@ -149,9 +182,19 @@ export const LoginPageOAuthIcon = styled.img`
   height: 40px;
   margin-left: 20px;
   margin-right: 20px;
+  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 `;
 export const LoginPageOAuthText = styled.p`
   font-size: 16px;
   font-weight: 500;
   color: ${(props) => props.theme.colors.primary};
+  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+    font-size: 12px;
+    width: 100%;
+  }
 `;
