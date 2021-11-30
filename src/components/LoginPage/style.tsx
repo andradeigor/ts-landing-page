@@ -66,6 +66,9 @@ export const LoginPageFormItem = styled("input")<{
   padding-bottom: 3%;
   padding-left: 5%;
   font-size: 20px;
+  :focus {
+    border: 1px solid ${(props) => props.theme.colors.secondary};
+  }
 `;
 
 export const LoginPageButtonArea = styled.div`
@@ -84,6 +87,11 @@ export const LoginPageButton = styled.button`
   font-size: 26px;
   font-weight: 500;
   color: ${(props) => props.theme.colors.background};
+  cursor: pointer;
+  :active {
+    position: relative;
+    top: -0.5px;
+  }
 `;
 
 export const LoginPageButtonSubTex = styled.p`
@@ -96,6 +104,7 @@ export const LoginPageButtonSubTexLink = styled.a`
   font-weight: 500;
   color: ${(props) => props.theme.colors.button};
   font-size: 18px;
+  cursor: pointer;
 `;
 
 export const LoginPageOAuthSubText = styled.p`
@@ -119,6 +128,11 @@ export const LoginPageOAuthButton = styled.button`
   outline: none;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  :active {
+    position: relative;
+    top: -0.5px;
+  }
 `;
 
 export const LoginPageOAuthIcon = styled.img`
