@@ -25,8 +25,6 @@ Rodando o Servidor localmente
  # Starte o Projeto
  $ yarn start
 
-
-
 ```
 
 ## 📜 Demonstração:
