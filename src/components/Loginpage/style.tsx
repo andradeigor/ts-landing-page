@@ -92,8 +92,8 @@ export const LoginPageFormItem = styled("input")<{
 
 export const LoginPageButtonArea = styled.div`
   margin-top: 10px;
-  width: 300px;
-  height: 110px;
+  width: 400px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -103,7 +103,7 @@ export const LoginPageButtonArea = styled.div`
   }
 `;
 export const LoginPageButton = styled.button`
-  width: 100%;
+  width: 300px;
   height: 60px;
   background-color: ${(props) => props.theme.colors.button};
   border: none;

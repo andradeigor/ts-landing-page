@@ -1,31 +1,31 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import {
-  LoginPageWarper,
-  LoginPageImageWarper,
-  LoginPageImage,
-  LoginPageFormWarper,
-  LoginPageFormContainer,
-  LoginPageFormTitle,
-  LoginPageFormItemWarper,
-  LoginPageFormItemTitle,
-  LoginPageFormItem,
-  LoginPageButtonArea,
-  LoginPageButton,
-  LoginPageButtonSubTex,
-  LoginPageButtonSubTexLink,
-  LoginPageOAuthSubText,
-  LoginPageOAuthArea,
-  LoginPageOAuthButton,
-  LoginPageOAuthIcon,
-  LoginPageOAuthText,
+  RegisterPageWarper,
+  RegisterPageImageWarper,
+  RegisterPageImage,
+  RegisterPageFormWarper,
+  RegisterPageFormContainer,
+  RegisterPageFormTitle,
+  RegisterPageFormItemWarper,
+  RegisterPageFormItemTitle,
+  RegisterPageFormItem,
+  RegisterPageButtonArea,
+  RegisterPageButton,
+  RegisterPageButtonSubTex,
+  RegisterPageButtonSubTexLink,
+  RegisterPageOAuthSubText,
+  RegisterPageOAuthArea,
+  RegisterPageOAuthButton,
+  RegisterPageOAuthIcon,
+  RegisterPageOAuthText,
 } from "./style";
 import ImagePath from "../../assets/background.jpeg";
 import GoogleIconPath from "../../assets/GoogleLogo.svg";
 import GitHubIconPath from "../../assets/GitHubLogo.svg";
 import CreateUser from "../../services/UserServices/user";
 
-const LoginPage: React.FC = () => {
+const RegisterPage: React.FC = () => {
   interface User {
     name: string;
     email: string;
@@ -42,25 +42,25 @@ const LoginPage: React.FC = () => {
     console.log(User);
   };
   return (
-    <LoginPageWarper>
-      <LoginPageImageWarper>
-        <LoginPageImage alt="background image" src={ImagePath} />
-      </LoginPageImageWarper>
-      <LoginPageFormWarper>
-        <LoginPageFormContainer onSubmit={handleSubmit(OnSubmit)}>
-          <LoginPageFormTitle>Welcome to Jammy</LoginPageFormTitle>
-          <LoginPageFormItemWarper>
-            <LoginPageFormItemTitle>Full name</LoginPageFormItemTitle>
-            <LoginPageFormItem
+    <RegisterPageWarper>
+      <RegisterPageImageWarper>
+        <RegisterPageImage alt="background image" src={ImagePath} />
+      </RegisterPageImageWarper>
+      <RegisterPageFormWarper>
+        <RegisterPageFormContainer onSubmit={handleSubmit(OnSubmit)}>
+          <RegisterPageFormTitle>Welcome to Jammy</RegisterPageFormTitle>
+          <RegisterPageFormItemWarper>
+            <RegisterPageFormItemTitle>Full name</RegisterPageFormItemTitle>
+            <RegisterPageFormItem
               error={errors.name}
               placeholder="John Doe"
               {...register("name", { required: true })}
-            ></LoginPageFormItem>
+            ></RegisterPageFormItem>
             {errors.name && <span> Name is required</span>}
-          </LoginPageFormItemWarper>
-          <LoginPageFormItemWarper>
-            <LoginPageFormItemTitle>Email</LoginPageFormItemTitle>
-            <LoginPageFormItem
+          </RegisterPageFormItemWarper>
+          <RegisterPageFormItemWarper>
+            <RegisterPageFormItemTitle>Email</RegisterPageFormItemTitle>
+            <RegisterPageFormItem
               error={errors.email}
               placeholder="Enter your Email here"
               {...register("email", {
@@ -70,12 +70,12 @@ const LoginPage: React.FC = () => {
                   message: "Entered value does not match email format",
                 },
               })}
-            ></LoginPageFormItem>
+            ></RegisterPageFormItem>
             {errors.email && <span> Email is required</span>}
-          </LoginPageFormItemWarper>
-          <LoginPageFormItemWarper>
-            <LoginPageFormItemTitle>Password</LoginPageFormItemTitle>
-            <LoginPageFormItem
+          </RegisterPageFormItemWarper>
+          <RegisterPageFormItemWarper>
+            <RegisterPageFormItemTitle>Password</RegisterPageFormItemTitle>
+            <RegisterPageFormItem
               error={errors.password}
               type="password"
               placeholder="Enter your Password"
@@ -86,31 +86,36 @@ const LoginPage: React.FC = () => {
                   message: "min lenght is 5",
                 },
               })}
-            ></LoginPageFormItem>
+            ></RegisterPageFormItem>
             {errors.password && <span> Password is required</span>}
-          </LoginPageFormItemWarper>
-          <LoginPageButtonArea>
-            <LoginPageButton type="submit">Create Account</LoginPageButton>
-            <LoginPageButtonSubTex>
+          </RegisterPageFormItemWarper>
+          <RegisterPageButtonArea>
+            <RegisterPageButton type="submit">
+              Create Account
+            </RegisterPageButton>
+            <RegisterPageButtonSubTex>
               Already have an account?
-              <LoginPageButtonSubTexLink> Log in</LoginPageButtonSubTexLink>
-            </LoginPageButtonSubTex>
-          </LoginPageButtonArea>
-          <LoginPageOAuthSubText>OR</LoginPageOAuthSubText>
-          <LoginPageOAuthArea>
-            <LoginPageOAuthButton>
-              <LoginPageOAuthIcon src={GoogleIconPath} />
-              <LoginPageOAuthText>Sign up with Google</LoginPageOAuthText>
-            </LoginPageOAuthButton>
-            <LoginPageOAuthButton>
-              <LoginPageOAuthIcon src={GitHubIconPath} />
-              <LoginPageOAuthText>Sign up with Github</LoginPageOAuthText>
-            </LoginPageOAuthButton>
-          </LoginPageOAuthArea>
-        </LoginPageFormContainer>
-      </LoginPageFormWarper>
-    </LoginPageWarper>
+              <RegisterPageButtonSubTexLink>
+                {" "}
+                Log in
+              </RegisterPageButtonSubTexLink>
+            </RegisterPageButtonSubTex>
+          </RegisterPageButtonArea>
+          <RegisterPageOAuthSubText>OR</RegisterPageOAuthSubText>
+          <RegisterPageOAuthArea>
+            <RegisterPageOAuthButton>
+              <RegisterPageOAuthIcon src={GoogleIconPath} />
+              <RegisterPageOAuthText>Sign up with Google</RegisterPageOAuthText>
+            </RegisterPageOAuthButton>
+            <RegisterPageOAuthButton>
+              <RegisterPageOAuthIcon src={GitHubIconPath} />
+              <RegisterPageOAuthText>Sign up with Github</RegisterPageOAuthText>
+            </RegisterPageOAuthButton>
+          </RegisterPageOAuthArea>
+        </RegisterPageFormContainer>
+      </RegisterPageFormWarper>
+    </RegisterPageWarper>
   );
 };
 
-export default LoginPage;
+export default RegisterPage;

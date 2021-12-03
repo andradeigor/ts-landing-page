@@ -42,15 +42,6 @@ const LoginPage: React.FC = () => {
         <LoginPageFormContainer onSubmit={handleSubmit(OnSubmit)}>
           <LoginPageFormTitle>Welcome to Jammy</LoginPageFormTitle>
           <LoginPageFormItemWarper>
-            <LoginPageFormItemTitle>Full Name</LoginPageFormItemTitle>
-            <LoginPageFormItem
-              error={errors.fullname}
-              placeholder="John Doe"
-              {...register("fullname", { required: true })}
-            ></LoginPageFormItem>
-            {errors.fullname && <span> Fullname is required</span>}
-          </LoginPageFormItemWarper>
-          <LoginPageFormItemWarper>
             <LoginPageFormItemTitle>Email</LoginPageFormItemTitle>
             <LoginPageFormItem
               error={errors.email}
@@ -82,10 +73,10 @@ const LoginPage: React.FC = () => {
             {errors.password && <span> Password is required</span>}
           </LoginPageFormItemWarper>
           <LoginPageButtonArea>
-            <LoginPageButton type="submit">Create Account</LoginPageButton>
+            <LoginPageButton type="submit">Login</LoginPageButton>
             <LoginPageButtonSubTex>
-              Already have an account?
-              <LoginPageButtonSubTexLink> Log in</LoginPageButtonSubTexLink>
+              Don't Have an account?
+              <LoginPageButtonSubTexLink> Create one</LoginPageButtonSubTexLink>
             </LoginPageButtonSubTex>
           </LoginPageButtonArea>
           <LoginPageOAuthSubText>OR</LoginPageOAuthSubText>

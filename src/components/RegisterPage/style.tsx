@@ -1,25 +1,25 @@
 import styled from "styled-components";
 
-export const LoginPageWarper = styled.div`
+export const RegisterPageWarper = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: row;
 `;
-export const LoginPageImageWarper = styled.div`
+export const RegisterPageImageWarper = styled.div`
   width: 45%;
   @media (max-width: ${(props) => props.theme.breakpoints.lg}) {
     width: 0;
   }
 `;
 
-export const LoginPageImage = styled.img`
+export const RegisterPageImage = styled.img`
   object-fit: cover;
   width: 100%;
   height: 100vh;
 `;
 
-export const LoginPageFormWarper = styled.div`
+export const RegisterPageFormWarper = styled.div`
   width: 55%;
   height: 100vh;
   display: flex;
@@ -35,7 +35,7 @@ export const LoginPageFormWarper = styled.div`
   }
 `;
 
-export const LoginPageFormContainer = styled.form`
+export const RegisterPageFormContainer = styled.form`
   width: 600px;
   height: 100%;
   display: flex;
@@ -45,7 +45,7 @@ export const LoginPageFormContainer = styled.form`
     width: 100%;
   }
 `;
-export const LoginPageFormTitle = styled.h1`
+export const RegisterPageFormTitle = styled.h1`
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 30px;
@@ -53,12 +53,12 @@ export const LoginPageFormTitle = styled.h1`
     font-size: 32px;
   }
 `;
-export const LoginPageFormItemWarper = styled.div`
+export const RegisterPageFormItemWarper = styled.div`
   width: 100%;
   height: 140px;
 `;
 
-export const LoginPageFormItemTitle = styled.p`
+export const RegisterPageFormItemTitle = styled.p`
   font-size: 20px;
   font-weight: 500;
   color: ${(props) => props.theme.colors.secondary};
@@ -68,7 +68,7 @@ export const LoginPageFormItemTitle = styled.p`
   }
 `;
 
-export const LoginPageFormItem = styled("input")<{
+export const RegisterPageFormItem = styled("input")<{
   error: boolean;
 }>`
   width: 100%;
@@ -90,7 +90,7 @@ export const LoginPageFormItem = styled("input")<{
   }
 `;
 
-export const LoginPageButtonArea = styled.div`
+export const RegisterPageButtonArea = styled.div`
   margin-top: 10px;
   width: 300px;
   height: 110px;
@@ -102,7 +102,7 @@ export const LoginPageButtonArea = styled.div`
     width: 250px;
   }
 `;
-export const LoginPageButton = styled.button`
+export const RegisterPageButton = styled.button`
   width: 100%;
   height: 60px;
   background-color: ${(props) => props.theme.colors.button};
@@ -123,7 +123,7 @@ export const LoginPageButton = styled.button`
   }
 `;
 
-export const LoginPageButtonSubTex = styled.p`
+export const RegisterPageButtonSubTex = styled.p`
   margin-top: 15px;
   font-weight: 300;
   font-size: 18px;
@@ -131,7 +131,7 @@ export const LoginPageButtonSubTex = styled.p`
     font-size: 14px;
   }
 `;
-export const LoginPageButtonSubTexLink = styled.a`
+export const RegisterPageButtonSubTexLink = styled.a`
   margin-top: 15px;
   font-weight: 500;
   color: ${(props) => props.theme.colors.button};
@@ -142,7 +142,7 @@ export const LoginPageButtonSubTexLink = styled.a`
   }
 `;
 
-export const LoginPageOAuthSubText = styled.p`
+export const RegisterPageOAuthSubText = styled.p`
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 26px;
@@ -151,7 +151,7 @@ export const LoginPageOAuthSubText = styled.p`
     font-size: 18px;
   }
 `;
-export const LoginPageOAuthArea = styled.div`
+export const RegisterPageOAuthArea = styled.div`
   width: 100%;
   height: 60px;
   display: flex;
@@ -162,7 +162,7 @@ export const LoginPageOAuthArea = styled.div`
   }
 `;
 
-export const LoginPageOAuthButton = styled.button`
+export const RegisterPageOAuthButton = styled.button`
   background-color: ${(props) => props.theme.colors.background};
   width: 290px;
   height: 100%;
@@ -177,7 +177,7 @@ export const LoginPageOAuthButton = styled.button`
   } //
 `;
 
-export const LoginPageOAuthIcon = styled.img`
+export const RegisterPageOAuthIcon = styled.img`
   width: 40px;
   height: 40px;
   margin-left: 20px;
@@ -189,7 +189,7 @@ export const LoginPageOAuthIcon = styled.img`
     margin-right: 10px;
   }
 `;
-export const LoginPageOAuthText = styled.p`
+export const RegisterPageOAuthText = styled.p`
   font-size: 16px;
   font-weight: 500;
   color: ${(props) => props.theme.colors.primary};
